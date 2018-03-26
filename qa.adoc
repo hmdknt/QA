@@ -9,7 +9,7 @@
 ** ラベルの名前と色の情報を取得するために、link:https://docs.gitlab.com/ee/api/labels.html[Labels]APIを利用した
 ** QA一覧のページに表示する内容を条件によって変更するために、link:https://docs.gitlab.com/ee/api/issues.html#list-project-issues[Issues]APIを利用した。以下に具体的な用途を示す。
 *** openしているissueのみを選択するため
-*** 選択したラベルに属するissueを表示するため
+*** 選択したラベルに属するissueのみを表示するため
 *** 降順と昇順を切り替えるため
 *** テーブルの表示件数を変更するため
 *** 検索ワードが含まれるissueを表示するため
@@ -17,6 +17,7 @@
 
 === 問題点
 * 検索をEnterキーで行うことができない
-* 複数ラベルを選択することができない
-** GitLabの
+* 検索条件がAND条件
+** GitLabのAPIでは
 * IEに対応していない
+* 
